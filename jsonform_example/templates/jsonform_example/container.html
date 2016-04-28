@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static from staticfiles %}
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    <h1>Example Form:</h1>
+
+    <div id="json-form-container" data-ajax-url="{% url 'json-form' %}">
+    </div>
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<script src="{% static 'jsonform_example/js/ajax-loader.js' %}"></script>
+</body>
+</html>

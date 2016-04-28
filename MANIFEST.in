@@ -1,0 +1,4 @@
+graft jsonform
+graft jsonform_example
+global-exclude __pycache__
+global-exclude *.py[co]
