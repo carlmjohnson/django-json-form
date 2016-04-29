@@ -58,4 +58,4 @@ class JsonFormBase(ContextMixin, View):
 
     @cached_property
     def serialized_form_data(self):
-        return json.dumps(self.form.data, cls=DjangoJSONEncoder)
+        return json.dumps(self.form.cleaned_data, cls=DjangoJSONEncoder)
